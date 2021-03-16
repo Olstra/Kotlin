@@ -1,7 +1,7 @@
 // Programming Languages and Paradigms
 // Spring 2021
 // Oliver Strassmann
-// Excersize 1, task 1
+// Excersize 1, task 2
 // create FizzBuzz programm in Kotlin
 
 fun main(args: Array<String>) {
