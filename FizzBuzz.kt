@@ -1,3 +1,9 @@
+// Programming Languages and Paradigms
+// Spring 2021
+// Oliver Strassmann
+// Excersize 1, task 1
+// create FizzBuzz programm in Kotlin
+
 fun main(args: Array<String>) {
     // setup
     var fBArgs = arrayOf(1, 1, 1, 1) // array to store arguments for function
@@ -15,20 +21,19 @@ fun main(args: Array<String>) {
         var idx = 0
         matches.forEach { f ->
             // put numbers into our array
-            fBArgs[idx] = f.value.toInt()
-            idx++
+            if(idx < fBArgs.size){
+                fBArgs[idx] = f.value.toInt()
+                idx++
+            }
         }
 
         // exit if user typed "quit"
-        if(userInput.equals("quit")){
-            validInput = true
-            return
-        }
+        if(userInput.equals("quit")){ return }
         else{
             // check that every nr is positive
             var positive = true
-            for(i in 0..fBArgs.size){
-                if (i < 0){
+            for(element in fBArgs){
+                if (element < 0){
                     positive = false
                     break
                 }
